@@ -1,10 +1,6 @@
 
 locals {
-  backend_apps = merge(var.backend_apps, {
-	  example-app = {
-		  app_name = "example-app-platzily-backend"
-	  }
-  })
+  backend_apps = merge(var.backend_apps, {})
 }
 
 module "backend_apps" {
