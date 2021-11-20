@@ -1,6 +1,10 @@
 
 locals {
-  backend_apps = merge(var.backend_apps, {})
+  backend_apps = merge(var.backend_apps, {
+	  demo-app: {
+		  app_name: "example-demo-app-backend"
+	  }
+  })
 }
 
 module "backend_apps" {
